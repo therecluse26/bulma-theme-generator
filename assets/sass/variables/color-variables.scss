@@ -1,0 +1,84 @@
+@import "../../../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+// Modifier constants
+// Change these to tweak the difference in shade between derivations
+$DARK: 10%;
+$DARKER: $DARK * 1.75;
+$DARKEST: $DARK * 2.5;
+$LIGHT: 10%;
+$LIGHTER: $LIGHT * 1.75;
+$LIGHTEST: $LIGHT * 2.5;
+
+// Primary colors from which others are derived
+// Tweak these first and foremost
+$green: #198b3c;
+$blue: #173774;
+$red: #bf0d3e;
+$yellow: #ffe600;
+
+// Color derivations (this shouldn't need touched)
+$grey-lightest: lighten($grey, $LIGHTEST);
+$grey-lighter: lighten($grey, $LIGHTER);
+$grey-light: lighten($grey, $LIGHT);
+$grey-dark: darken($grey, $DARK);
+$grey-darker: darken($grey, $DARKER);
+$grey-darkest: darken($grey, $DARKEST);
+
+$red-lightest: lighten($red, $LIGHTEST);
+$red-lighter: lighten($red, $LIGHTER);
+$red-light: lighten($red, $LIGHT);
+$red-dark: darken($red, $DARK);
+$red-darker: darken($red, $DARKER);
+$red-darkest: darken($red, $DARKEST);
+
+$green-lightest: lighten($green, $LIGHTEST);
+$green-lighter: lighten($green, $LIGHTER);
+$green-light: lighten($green, $LIGHT);
+$green-dark: darken($green, $DARK);
+$green-darker: darken($green, $DARKER);
+$green-darkest: darken($green, $DARKEST);
+
+$blue-lightest: lighten($blue, $LIGHTEST);
+$blue-lighter: lighten($blue, $LIGHTER);
+$blue-light: lighten($blue, $LIGHT);
+$blue-dark: darken($blue, $DARK);
+$blue-darker: darken($blue, $DARKER);
+$blue-darkest: darken($blue, $DARKEST);
+
+$yellow-lightest: lighten($yellow, $LIGHTEST);
+$yellow-lighter: lighten($yellow, $LIGHTER);
+$yellow-light: lighten($yellow, $LIGHT);
+$yellow-dark: darken($yellow, $DARK);
+$yellow-darker: darken($yellow, $DARKER);
+$yellow-darkest: darken($yellow, $DARKEST);
+
+$purple: mix($red, $blue, 50%);
+$purple-lightest: lighten($purple, $LIGHTEST);
+$purple-lighter: lighten($purple, $LIGHTER);
+$purple-light: lighten($purple, $LIGHT);
+$purple-dark: darken($purple, $DARK);
+$purple-darker: darken($purple, $DARKER);
+$purple-darkest: darken($purple, $DARKEST);
+
+$orange: mix($red-light, $yellow, 60%);
+$orange-lightest: lighten($orange, $LIGHTEST);
+$orange-lighter: lighten($orange, $LIGHTER);
+$orange-light: lighten($orange, $LIGHT);
+$orange-dark: darken($orange, $DARK);
+$orange-darker: darken($orange, $DARKER);
+$orange-darkest: darken($orange, $DARKEST);
+
+$brown: mix($yellow-darkest, $orange-darkest, 70%);
+$brown-lightest: lighten($brown, $LIGHTEST);
+$brown-lighter: lighten($brown, $LIGHTER);
+$brown-light: lighten($brown, $LIGHT);
+$brown-dark: darken($brown, $DARK);
+$brown-darker: darken($brown, $DARKER);
+$brown-darkest: darken($brown, $DARKEST);
+
+$turquoise: mix($green-light, $blue-light, 50%);
+$cyan: mix($green-lighter, $blue-lighter, 40%);
+
+// Creates a list of all colors for looping over
+// This is useful for creating new 
+$all-colors: ("black": $black, "black-bis": $black-bis, "black-ter": $black-ter, "white": $white, "white-bis": $white-bis, "white-ter": $white-ter, "grey": $grey, "grey-lightest": $grey-lightest, "grey-lighter": $grey-lighter, "grey-light": $grey-light, "grey-darkest": $grey-darkest, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "green": $green, "green-lightest": $green-lightest, "green-lighter": $green-lighter, "green-light": $green-light, "green-darkest": $green-darkest, "green-darker": $green-darker, "green-dark": $green-dark, "red": $red, "red-lightest": $red-lightest, "red-lighter": $red-lighter, "red-light": $red-light, "red-darkest": $red-darkest, "red-darker": $red-darker, "red-dark": $red-dark, "blue": $blue, "blue-darkest": $blue-darkest, "blue-darker": $blue-darker, "blue-dark": $blue-dark, "blue-lightest": $blue-lightest, "blue-lighter": $blue-lighter, "blue-light": $blue-light, "yellow": $yellow, "yellow-lightest": $yellow-lightest, "yellow-lighter": $yellow-lighter, "yellow-light": $yellow-light, "yellow-darkest": $yellow-darkest, "yellow-darker": $yellow-darker, "yellow-dark": $yellow-dark, "purple": $purple, "purple-darkest": $purple-darkest, "purple-darker": $purple-darker, "purple-dark": $purple-dark, "purple-lightest": $purple-lightest, "purple-lighter": $purple-lighter, "purple-light": $purple-light, "orange": $orange, "orange-lightest": $orange-lightest, "orange-lighter": $orange-lighter, "orange-light": $orange-light, "orange-darkest": $orange-darkest, "orange-darker": $orange-darker, "orange-dark": $orange-dark, "brown": $brown, "brown-lightest": $brown-lightest, "brown-lighter": $brown-lighter, "brown-light": $brown-light, "brown-darkest": $brown-darkest, "brown-darker": $brown-darker, "brown-dark": $brown-dark, "turquoise": $turquoise, "cyan": $cyan);

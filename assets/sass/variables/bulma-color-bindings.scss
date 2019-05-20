@@ -1,0 +1,22 @@
+@import "color-variables.scss";
+
+$primary: $turquoise;
+$link: $grey-light;
+$link-hover: $blue-light;
+$info: $blue;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$dark: $grey-darker;
+$text: $grey-dark;
+$background: $blue-dark;
+
+// Loops over $all-colors map and creates background and text classes for each color
+@each $name, $val in $all-colors {
+    .has-text-#{$name} {
+        color: #{$val} !important;
+    }
+    .has-background-#{$name} {
+        background-color: #{$val}  !important;
+    }    
+}

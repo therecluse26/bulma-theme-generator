@@ -1,0 +1,7 @@
+{
+  "name": "fortisure-bulma-theme",
+  "version": "0.0.2",
+  "dependencies": {
+    "bulma": "0.7.4"
+  }
+}
